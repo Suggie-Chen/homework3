@@ -1,4 +1,4 @@
-package Filter;
+package bag;
 
 import javax.servlet.*;
 import javax.servlet.annotation.WebFilter;
@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
-@WebFilter(filterName = "loginFilter",urlPatterns = {"/loginServlet/*"})
+@WebFilter(filterName = "loginFilter",urlPatterns = {"/addServlet/*"})
 public class loginFilter implements javax.servlet.Filter {
     public void destroy() {
     }
@@ -28,7 +28,5 @@ public class loginFilter implements javax.servlet.Filter {
     }
 
     public void init(FilterConfig config) throws ServletException {
-
     }
-
 }
